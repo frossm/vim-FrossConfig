@@ -2,7 +2,7 @@
 " vim: tw=0 ts=4 sw=4
 " Vim color file
 " Maintainer:	michael@fross.org
-" Last Change:	Feburary 2007
+" Last Change:	Feburary 2022
 
 set background=dark
 highlight clear
@@ -36,9 +36,9 @@ highlight DiffChange term=bold ctermfg=15 ctermbg=9 guifg=White guibg=Blue
 highlight DiffDelete term=bold ctermfg=13 ctermbg=11 gui=bold guifg=Magenta guibg=Black
 highlight DiffText term=reverse cterm=bold ctermfg=15 ctermbg=12 gui=bold guifg=White guibg=Red
 highlight Cursor guifg=bg guibg=fg
-highlight lCursor guifg=bg guibg=fg
-highlight Normal guifg=white guibg=black
-highlight Comment ctermfg=White guifg=DarkGray guibg=#101010
+highlight lCursor guifg=bg guibg=bg
+highlight Normal guifg=fg guibg=bg
+highlight Comment ctermfg=DarkGray guifg=DarkGray guibg=#101010
 highlight Constant term=underline ctermfg=13 guifg=#ffa0a0
 highlight Special term=bold ctermfg=12 guifg=Orange
 highlight Identifier term=underline cterm=bold ctermfg=11 guifg=#40ffff
@@ -51,8 +51,8 @@ highlight Error term=reverse ctermfg=15 ctermbg=12 guifg=White guibg=Red
 highlight Todo term=standout ctermfg=0 ctermbg=14 guifg=Blue guibg=Yellow
 highlight DebugBreak ctermfg=15 ctermbg=4 guifg=white guibg=darkred
 highlight DebugStop ctermfg=15 ctermbg=10 guifg=white guibg=lightgreen
-highlight CursorLine guibg=#252525 ctermbg=DarkBlue ctermfg=White
-highlight CursorColumn guibg=#252525 ctermbg=Yellow ctermfg=White
+highlight CursorLine guibg=#252525 ctermbg=DarkGray ctermfg=White
+highlight CursorColumn guibg=#252525 ctermbg=DarkGray ctermfg=White
 highlight Spellbad guisp=darkgrey
 highlight MatchParen guifg=Black guibg=#AAAAAA
 
