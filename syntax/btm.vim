@@ -47,7 +47,8 @@ syn match btmNumber     "\<\d\+\>"
 " In fact this is a Label
 "syn match btmComment		"^\ *:\ \+.*$" contains=btmTodo
 
-syn match btmComment		"^\s*rem.*$" contains=btmTodo
+" Exclude "remove" from being a comment by adding the [^ove]
+syn match btmComment		"^\s*rem[^ove].*$" contains=btmTodo
 syn match btmComment		"^\s*::.*$" contains=btmTodo
 
 syn match btmLabelMark		"^\ *:[0-9a-zA-Z_\-]\+\>"
