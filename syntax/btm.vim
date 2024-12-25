@@ -89,7 +89,7 @@ syn match btmArgument		"%\d\>&"
 " //Variable used by FOR loops sometimes use %%<letter> in batchfiles
 syn match btmArgument		"%%\a\>"
 
-" //Show 4DOS built-in functions specially
+" //Show TCC built-in functions specially
 syn match btmBIFMatch "%@\w\+\["he=e-1 contains=btmBuiltInFunc
 syn keyword btmBuiltInFunc contained	alias ascii attrib cdrom
 syn keyword btmBuiltInFunc contained	char clip comma convert
@@ -128,7 +128,7 @@ syn keyword btmSpecialVar contained	cmdline colordir comspec
 syn keyword btmSpecialVar contained	copycmd dircmd temp temp4dos
 syn keyword btmSpecialVar contained	filecompletion path prompt
 
-" //Show 4DOS built-in variables specially specially
+" //Show TCC built-in variables specially specially
 syn keyword btmBuiltInVar contained	_4ver _alias _ansi
 syn keyword btmBuiltInVar contained	_apbatt _aplife _apmac _batch
 syn keyword btmBuiltInVar contained	_batchline _batchname _bg
@@ -145,7 +145,7 @@ syn keyword btmBuiltInVar contained	_second _shell _swapping
 syn keyword btmBuiltInVar contained	_syserr _time _transient
 syn keyword btmBuiltInVar contained	_video _win _wintitle _year
 
-" //Commands in 4DOS and/or DOS
+" //Commands in TCC
 syn match btmCommand	"\s?"
 syn match btmCommand	"^?"
 syn keyword btmCommand	alias append assign attrib
@@ -162,11 +162,11 @@ syn keyword btmCommand	edit edlin emm386 endlocal
 syn keyword btmCommand	endswitch erase eset except
 syn keyword btmCommand	exe2bin exit expand fastopen
 syn keyword btmCommand	fc fdisk ffind find format
-syn keyword btmCommand	free global gosub goto
+syn keyword btmCommand	free fsearch global gosub goto
 syn keyword btmCommand	graftabl graphics help history
 syn keyword btmCommand	inkey input join keyb keybd
 syn keyword btmCommand	keystack label lh list loadbtm
-syn keyword btmCommand	loadhigh lock log md mem
+syn keyword btmCommand	loadhigh lock log mapexe md mem
 syn keyword btmCommand	memory mirror mkdir mode more
 syn keyword btmCommand	move nlsfunc on option path
 syn keyword btmCommand	pause popd print prompt pushd
